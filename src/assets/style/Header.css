@@ -1,0 +1,49 @@
+    .header {
+    background-color: #1a252f;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .logo-container {
+    display: flex;
+    align-items: center;
+    }
+
+    .logo {
+    height: 40px;
+    margin-right: 10px;
+    }
+
+    .logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+    .nav {
+    display: flex;
+    gap: 15px;
+    }
+
+    .nav-link {
+    color: white;
+    text-decoration: none;
+    }
+
+    .nav-link:hover {
+    text-decoration: underline;
+    }
+
+    .download-btn {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    }
+
+    .download-btn:hover {
+    background-color: #0088cc;
+    }
