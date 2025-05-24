@@ -1,0 +1,28 @@
+/* App.css */
+
+body {
+  background: #0d1b2a;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.glow-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  opacity: 1;
+  z-index: 9999;
+  pointer-events: none;
+  animation: fadeOutGlow 1.6s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+
+@keyframes fadeOutGlow {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ...existing code... */
