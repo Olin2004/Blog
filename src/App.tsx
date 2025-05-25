@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 
 import EffectsBackground from "./hooks/EffectsBackground";
 
+
 const App = () => {
   const [showGlow, setShowGlow] = useState(true);
 
