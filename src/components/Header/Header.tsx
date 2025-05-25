@@ -41,8 +41,8 @@ const Header = () => {
                     {dropdownOpen && (
                       <div className={styles.dropdown_menu_megamenu}>
                         <div className={styles.dropdown_col}>
-                          <div className={styles.dropdown_group_title}>Personal Contact</div>
-                          <a href="https://mail.google.com/mail/?view=cm&to=vanson2004tkhd@gmail.com" target="_blank" rel="noopener noreferrer">📧 Email</a>
+                          <div className={styles.dropdown_group_title}>Liên hệ cá nhân</div>
+                          <a href="mailto:vanson2004tkhd@gmail.com" target="_blank" rel="noopener noreferrer">📧 Email</a>
                           <a href="https://zalo.me" target="_blank" rel="noopener noreferrer">💬 Zalo</a>
                           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
                         </div>
