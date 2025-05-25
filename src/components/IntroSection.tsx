@@ -25,7 +25,7 @@ const IntroSection = () => (
         Backend tools & concepts:  WebSocket, RESTful API.<br/><br/>
         Databases: MySQL.<br/><br/>
         Tools: VSCode, Git, GitLab, Postman, Docker, Trello.<br/><br/>
-        Familiar with Linux (Ubuntu) environments.<br/><br/>
+        
         Soft skills: Teamwork, Communication, Creativity, Responsibility, and Eagerness to learn.</p>
       </div>
       <div className={styles.skills_block}>
