@@ -72,37 +72,13 @@ function drawFireworks(canvas: HTMLCanvasElement) {
   let particles: Particle[] = [];
 
   function launchFirework() {
-    // Randomly pick a side: 0=top, 1=bottom, 2=left, 3=right
-    const side = Math.floor(Math.random() * 4);
-    let x = 0, y = 0, vx = 0, vy = 0;
-    let tx = w * (0.2 + 0.6 * Math.random());
-    let ty = h * (0.2 + 0.6 * Math.random());
-    switch (side) {
-      case 0: // top
-        x = tx;
-        y = 0;
-        vx = 0;
-        vy = (ty - y) / 60;
-        break;
-      case 1: // bottom
-        x = tx;
-        y = h;
-        vx = 0;
-        vy = (ty - y) / 60;
-        break;
-      case 2: // left
-        x = 0;
-        y = ty;
-        vx = (tx - x) / 60;
-        vy = 0;
-        break;
-      case 3: // right
-        x = w;
-        y = ty;
-        vx = (tx - x) / 60;
-        vy = 0;
-        break;
-    }
+    // Always launch from the bottom, fly upward, and move slower
+    const x = w * (0.2 + 0.6 * Math.random()); // random horizontal position
+    const y = h;
+    const tx = x; // target x is the same as start x (vertical launch)
+    const ty = h * (0.2 + 0.4 * Math.random()); // random height, not too close to top
+    const vx = 0;
+    const vy = (ty - y) / 90; // slower upward speed (was /60)
     const color = `hsl(${Math.random() * 360}, 80%, 60%)`;
     fireworks.push({ x, y, vx, vy, tx, ty, exploded: false, color });
   }

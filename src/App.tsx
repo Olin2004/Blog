@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Header from "./assets/ui/Header";
-import EffectsBackground from "./assets/ui/EffectsBackground";
+import Header from "./components/Header/Header";
+import IntroSection from "./components/IntroSection";
+import EffectsBackground from "./hooks/EffectsBackground";
 
 const App = () => {
   const [showGlow, setShowGlow] = useState(true);
@@ -16,6 +17,7 @@ const App = () => {
       <EffectsBackground />
       {showGlow && <div className="glow-overlay" />}
       <Header />
+      
     </>
   );
 };

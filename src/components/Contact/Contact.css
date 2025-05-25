@@ -1,0 +1,36 @@
+.contact-section {
+  padding: 48px 0 0 0;
+  text-align: center;
+  color: #fff;
+}
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+.contact-card {
+  background: #1b263b;
+  border-radius: 16px;
+  padding: 24px 32px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 12px #1cefff33;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 220px;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .contact-methods {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .contact-card {
+    padding: 16px 8px;
+    font-size: 0.98rem;
+  }
+} 
