@@ -30,7 +30,7 @@ const Header = () => {
               </a>
             ))}
             <a href="/cv/Son-Pham-Van-BackEnd-Web-Intern.pdf" className={styles.download_btn} download>
-              Download CV
+              Download CV.
             </a>
           </nav>
         </div>
