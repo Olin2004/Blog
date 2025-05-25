@@ -133,6 +133,14 @@
     font-size: 1.2rem;
     margin-bottom: 1em;
     color: #1cefff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skills_block > span:hover {
+    transform: translateY(-2px) scale(1.04);
+    text-shadow: 0 2px 12px #1cefff88;
+    color: #fff;
 }
 
 .skills_list {
@@ -151,9 +159,12 @@
 }
 
 .skill_item:hover {
-    background: rgba(28, 239, 255, 0.2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px #1cefff22;
+    background: linear-gradient(90deg, #43e97b 0%, #1cefff 100%);
+    color: #0d1b2a;
+    font-weight: 700;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 20px #1cefff55;
+    border: 1.5px solid #1cefff99;
 }
 
 .intro_big_avatar {

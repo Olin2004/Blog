@@ -244,3 +244,119 @@
         font-size: 0.7rem;
     }
 }
+
+.nav_dropdown_wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 160px;
+  background: #112240;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px #1cefff44;
+  padding: 10px 0;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s cubic-bezier(0.4,0,0.2,1), transform 0.22s cubic-bezier(0.4,0,0.2,1);
+}
+
+.nav_dropdown_wrapper:hover .dropdown_menu,
+.nav_dropdown_wrapper:focus-within .dropdown_menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdown_menu a {
+  display: block;
+  padding: 10px 24px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.18s, color 0.18s;
+  border-radius: 8px;
+}
+
+.dropdown_menu a:hover {
+  background: linear-gradient(90deg, #1cefff 0%, #43e97b 100%);
+  color: #0d1b2a;
+}
+
+.dropdown_menu_megamenu {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 380px;
+  background: #112240;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px #1cefff44;
+  padding: 18px 24px 18px 24px;
+  z-index: 100;
+  display: flex;
+  gap: 32px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s cubic-bezier(0.4,0,0.2,1), transform 0.22s cubic-bezier(0.4,0,0.2,1);
+}
+
+.nav_dropdown_wrapper:hover .dropdown_menu_megamenu,
+.nav_dropdown_wrapper:focus-within .dropdown_menu_megamenu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdown_col {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.dropdown_group_title {
+  font-weight: 800;
+  color: #1cefff;
+  font-size: 1.08rem;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+}
+
+.dropdown_menu_megamenu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0 8px 0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background 0.18s, color 0.18s, padding-left 0.18s;
+  padding-left: 8px;
+}
+
+.dropdown_menu_megamenu a:hover {
+  background: linear-gradient(90deg, #1cefff 0%, #43e97b 100%);
+  color: #0d1b2a;
+  padding-left: 18px;
+}
+
+@media (max-width: 600px) {
+  .dropdown_menu_megamenu {
+    min-width: 220px;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 8px;
+  }
+  .dropdown_col {
+    min-width: 120px;
+  }
+}

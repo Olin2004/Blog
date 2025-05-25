@@ -1,7 +1,7 @@
 import styles from './Intro/IntroSection.module.css';
 
 const skills = [
-  'JavaScript', 'TypeScript', 'Python', 'React', 'Redux', 'Node.js',"Sprng Boot", 
+  'JavaScript', 'TypeScript', 'Python', 'React', 'Redux', 'Node.js',"Spring Boot", 
   'MUI', 'Ant Design', 'Tailwind CSS',
   'RESTful API',
   'MongoDB', 'MySQL',
