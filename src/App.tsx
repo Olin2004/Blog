@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
-import IntroSection from "./components/IntroSection";
+
 import EffectsBackground from "./hooks/EffectsBackground";
 
 const App = () => {
