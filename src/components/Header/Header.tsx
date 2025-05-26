@@ -7,7 +7,7 @@ const projects = [
     title: "E-commerce Platform",
     description: "A full-stack e-commerce platform built with React, Node.js, and MongoDB",
     technologies: ["React", "Node.js", "MongoDB", "Express"],
-    link: "#"
+    link: "https://github.com/Olin2004/sell-milk-tea"
   },
   {
     title: "Task Management App",
