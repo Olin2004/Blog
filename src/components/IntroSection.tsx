@@ -6,7 +6,6 @@ const skills = [
   'RESTful API',
   'MongoDB', 'MySQL',
   'VSCode', 'Git', 'GitLab', 'Postman', 'Trello',"Docker","InteLliJ",
-  
 ];
 
 const IntroSection = () => (  
@@ -17,7 +16,8 @@ const IntroSection = () => (
       <p className={styles.intro_role}>BackEnd Developer </p>
       <p className={styles.intro_desc}>I am a web application developer</p>
       <button className={styles.intro_contact_btn}>Contact</button>
-      <div className={styles.about_me_block}>
+
+      <div className={styles.about_me_block} id="about-me">
         <h2>About me</h2>
         <p>I'm Son, a passionate computer technician with over 1 year of experience overall, specializing in both Front-End and Back-End development.<br/><br/>
         Skilled in JavaScript, TypeScript, Python, and experienced with frameworks like ReactJS, Redux Toolkit, Node.js, FastAPI, and Flask.<br/><br/>

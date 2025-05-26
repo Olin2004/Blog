@@ -6,6 +6,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
@@ -37,12 +39,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Tối ưu font rendering */
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 /* Responsive container chung */
 .container {
   width: 100%;
@@ -52,27 +48,49 @@ html {
   box-sizing: border-box;
 }
 
-@media (max-width: 1400px) {
+/* Desktop lớn (>=1400px) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+    padding: 0 60px;
+  }
+}
+
+/* Desktop (1200px - 1399px) */
+@media (max-width: 1399px) {
   .container {
     max-width: 1200px;
+    padding: 0 40px;
   }
 }
 
-@media (max-width: 1200px) {
+/* Tablet lớn (992px - 1199px) */
+@media (max-width: 1199px) {
   .container {
-    max-width: 992px;
+    max-width: 960px;
+    padding: 0 32px;
   }
 }
 
-@media (max-width: 992px) {
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
   .container {
-    max-width: 768px;
+    max-width: 720px;
+    padding: 0 24px;
   }
 }
 
-@media (max-width: 768px) {
+/* Mobile lớn (375px - 767px) */
+@media (max-width: 767px) {
   .container {
     max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+/* Mobile nhỏ (<375px) */
+@media (max-width: 374px) {
+  .container {
     padding: 0 16px;
   }
 }
@@ -82,4 +100,22 @@ html {
   .min-h-screen {
     min-height: -webkit-fill-available;
   }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1b2a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1cefff40;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1cefff80;
 }

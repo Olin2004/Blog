@@ -1,41 +1,110 @@
 .footer {
   background: #1b263b;
   color: #fff;
-  padding: 18px 0 8px 0;
+  padding: 18px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   min-height: 48px;
   font-size: 0.98rem;
   position: relative;
-  bottom: 0;
-  left: 0;
 }
+
 .footer-text {
   margin-left: 32px;
+  opacity: 0.9;
 }
+
 .footer-socials {
   margin-right: 32px;
   display: flex;
   gap: 18px;
 }
+
 .footer-socials a {
   color: #1cefff;
   font-size: 1.4rem;
-  transition: color 0.18s;
+  transition: all 0.3s ease;
 }
+
 .footer-socials a:hover {
   color: #fff;
+  transform: translateY(-3px);
 }
-@media (max-width: 600px) {
+
+/* Desktop (>=1200px) */
+@media (min-width: 1200px) {
+  .footer {
+    padding: 20px 0;
+  }
+  .footer-text {
+    margin-left: 180px;
+  }
+  .footer-socials {
+    margin-right: 180px;
+    gap: 24px;
+  }
+}
+
+/* Tablet lớn (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .footer-text {
+    margin-left: 100px;
+  }
+  .footer-socials {
+    margin-right: 100px;
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .footer-text {
+    margin-left: 40px;
+  }
+  .footer-socials {
+    margin-right: 40px;
+    gap: 16px;
+  }
+  .footer-socials a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile (<=767px) */
+@media (max-width: 767px) {
   .footer {
     flex-direction: column;
-    gap: 8px;
-    font-size: 0.9rem;
-    padding: 10px 0 4px 0;
+    gap: 12px;
+    padding: 16px 0;
+    text-align: center;
   }
-  .footer-text, .footer-socials {
+  .footer-text {
     margin: 0;
+    font-size: 0.9rem;
   }
-} 
+  .footer-socials {
+    margin: 0;
+    gap: 24px;
+  }
+  .footer-socials a {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile nhỏ (<375px) */
+@media (max-width: 374px) {
+  .footer {
+    padding: 12px 0;
+    gap: 8px;
+  }
+  .footer-text {
+    font-size: 0.85rem;
+  }
+  .footer-socials {
+    gap: 20px;
+  }
+  .footer-socials a {
+    font-size: 1.2rem;
+  }
+}
