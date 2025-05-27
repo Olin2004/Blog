@@ -6,7 +6,7 @@ const projects = [
   {
     title: "E-commerce Platform",
     description: "A full-stack e-commerce platform built with React, Node.js, and MongoDB",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
+    technologies: ["React Native", "MySQL","Spring Boot","Docker",],
     link: "https://github.com/Olin2004/sell-milk-tea"
   },
   {
@@ -18,7 +18,7 @@ const projects = [
   {
     title: "Portfolio Website",
     description: "Personal portfolio website showcasing projects and skills",
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    technologies: ["React", "TypeScript", ],
     link: "#"
   }
 ];

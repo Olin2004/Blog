@@ -8,7 +8,7 @@ const Contact = () => (
     <div className="contact-methods">
       <div className="contact-card">
         <span role="img" aria-label="email">📧</span>
-        hiep203dxxv@gmail.com
+        vanson2004tkhd@gmail.com
       </div>
       <div className="contact-card">
         <span role="img" aria-label="phone">📞</span>

@@ -20,8 +20,8 @@ const IntroSection = () => (
       <div className={styles.about_me_block} id="about-me">
         <h2>About me</h2>
         <p>I'm Son, a passionate computer technician with over 1 year of experience overall, specializing in both Front-End and Back-End development.<br/><br/>
-        Skilled in JavaScript, TypeScript, Python, and experienced with frameworks like ReactJS, Redux Toolkit, Node.js, FastAPI, and Flask.<br/><br/>
-        Proficient in UI libraries and tools: MUI, Ant Design, ShadCN, Tailwind CSS, React Chart, Chart.js.<br/><br/>
+        Skilled in JavaScript, TypeScript,   and experienced with frameworks like ReactJS, Redux Toolkit, Node.js.<br/><br/>
+        Proficient in UI libraries and tools: MUI, Ant Design, Tailwind CSS<br/><br/>
         Backend tools & concepts:  WebSocket, RESTful API.<br/><br/>
         Databases: MySQL.<br/><br/>
         Tools: VSCode, Git, GitLab, Postman, Docker, Trello.<br/><br/>
